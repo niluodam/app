@@ -20,7 +20,7 @@
 
 5) Run Flask App
   ~ cd $ROOT_DIR/src/flask_app/
-  ~ flask run --host=0.0.0.0 --port=8080
+  ~ flask run --host=127.0.0.1 --port=8080 --debug
 
 6) web-app
   open browser & paste 
