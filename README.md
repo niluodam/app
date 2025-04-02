@@ -3,6 +3,9 @@
 </pre>
 <pre>
 1) Download this repository
+
+  also
+  https://drive.google.com/drive/folders/1tWHA185vlTa8KCDhByMWGmObpELQ_xv-?usp=drive_link
   
 2) set this variables 
     ~ export ROOT_DIR="/path/to/app"
