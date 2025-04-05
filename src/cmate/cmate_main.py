@@ -79,25 +79,8 @@ class CMate:
                                 int(source_seg.shape[0]*resize_factor))
                                )
 
-        source_points[0] = utils.resize_shoulder_coord(
-            source_points[0], resize_factor)
-        source_points[1] = utils.resize_shoulder_coord(
-            source_points[1], resize_factor)
-        """
-        # step 5: rotate source seg and shoulder points
-        rotation_angle = dest_angle - source_angle
-        # clip angle between [-10,10]
-        if abs(rotation_angle) > 5:
-            self.error_list.append("Source Image is rotated: %f" % rotation_angle)
-        rotation_angle = max(-10, min(rotation_angle, 10))
-        print("rotation angle:", rotation_angle)
-        rotated_seg = imutils.rotate(source_seg, rotation_angle)
-        source_points = utils.rotate_shoulder_points(source_seg, source_points,
-                                                     rotation_angle)
-        """
-
-        # step 5.2: remove border
-        _, source_seg = utils.remove_segmentation_border(source_seg)
+       
+        source_seg = utils.remove_segmentation_border(source_seg)
 
         # step 6: blend dest image and extracted cloth
         dest_frame = cv.imread(self.dest_img)
