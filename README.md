@@ -13,6 +13,9 @@ https://drive.google.com/drive/folders/1tWHA185vlTa8KCDhByMWGmObpELQ_xv-?usp=dri
 set ROOT_DIR=C:\path\to\app
 set SECRET_KEY=some_secret_text
 set FLASK_APP=wsgi.py
+
+
+----------------------------------------
   
 3) install using requirements file  
   
@@ -23,6 +26,7 @@ pip install -r requirements.txt
 ~ cd $ROOT_DIR/src/cmate/segmentation/models
 ~ sh get_models.sh
 
+---------------------------------------
 
 5) Run Flask App
 
