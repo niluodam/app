@@ -4,8 +4,9 @@
 <pre>
 1) Download this repository
 
-  also
-  https://drive.google.com/drive/folders/1tWHA185vlTa8KCDhByMWGmObpELQ_xv-?usp=drive_link
+also
+<br>
+https://drive.google.com/drive/folders/1tWHA185vlTa8KCDhByMWGmObpELQ_xv-?usp=drive_link
   
 2) set this variables 
   
@@ -24,10 +25,11 @@ pip install -r requirements.txt
 
 
 5) Run Flask App
-  ~ cd $ROOT_DIR/src/flask_app/
-  ~ flask run --host=127.0.0.1 --port=8080 --debug
+
+cd $ROOT_DIR/src/flask_app/
+flask run --host=127.0.0.1 --port=8080 --debug
 
 6) web-app
-  open browser & paste 
+  open any browser & paste 
   http://127.0.0.1:8080
 </pre>
