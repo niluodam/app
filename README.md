@@ -8,13 +8,15 @@
   https://drive.google.com/drive/folders/1tWHA185vlTa8KCDhByMWGmObpELQ_xv-?usp=drive_link
   
 2) set this variables 
-    set ROOT_DIR=C:\path\to\app
+  
+set ROOT_DIR=C:\path\to\app
 set SECRET_KEY=some_secret_text
 set FLASK_APP=wsgi.py
   
 3) install using requirements file  
-    ~ cd $ROOT_DIR
-    ~ pip install -r requirements.txt
+  
+cd $ROOT_DIR
+pip install -r requirements.txt
 
 4) Download model files
 ~ cd $ROOT_DIR/src/cmate/segmentation/models
