@@ -26,10 +26,6 @@ def home():
     if session_alive(PROFILE_DIR):
         profile_image = session['profile_image']
 
-    
-
-    	
-
     return render_template('index.html', profile_image=profile_image)
 
 @app.route('/footer/<path:link>')
