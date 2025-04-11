@@ -152,11 +152,18 @@ def tryon_result():
 
     return jsonify(result_image=result_image)
 
+@app.route('/download_result/')
+def download_result():
+    filename = request.args.get('filename')
+    if not filename:
+        flash("Filename not provided.", "danger")
+        return redirect(url_for('index'))  # fallback
 
-@app.route('/download/<path:filename>')
-def download_file(filename):
     return send_from_directory(RESULT_DIR,
-                               secure_filename(filename), as_attachment=True)
+                               secure_filename(filename),
+                               as_attachment=True)
+  
+
 
 @app.route('/profile_images/<path:filename>')
 def get_profile_image(filename):
